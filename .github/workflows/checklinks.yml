@@ -1,0 +1,12 @@
+name: checklinks
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check links on site
+      uses: peaceiris/actions-muffet@v0.5.3
+      with: 
+        args: "https://mattorb.com"
