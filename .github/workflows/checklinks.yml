@@ -13,4 +13,5 @@ jobs:
           --timeout 20 
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
+          --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
           https://mattorb.com
