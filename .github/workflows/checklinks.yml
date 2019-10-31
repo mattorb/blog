@@ -9,4 +9,8 @@ jobs:
     - name: Check links on site
       uses: peaceiris/actions-muffet@v0.5.3
       with: 
-        args: "--timeout 20 --exclude .*linkedin.com/in/mattorb --exclude .*twitter.com/share.* https://mattorb.com"
+        args: >
+          --timeout 20 
+          --exclude .*linkedin.com/in/mattorb 
+          --exclude .*twitter.com/share.* 
+          https://mattorb.com
