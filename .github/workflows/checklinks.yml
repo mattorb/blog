@@ -14,4 +14,5 @@ jobs:
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
           --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
+          --exclude "https://github.com/mattorb/blog/actions\?workflow=checklinks"
           https://mattorb.com
