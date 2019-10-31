@@ -1,1 +1,1 @@
-# blog
+Future home of some Infrastructure as code.
