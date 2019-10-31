@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check links on site
-      uses: peaceiris/actions-muffet@v0.5.3
+      uses: mattorb/actions-muffet@v1.3.1
       with: 
         args: >
           --timeout 20 
