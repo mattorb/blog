@@ -15,7 +15,7 @@ jobs:
       uses: mattorb/actions-muffet@v1.3.1
       with: 
         args: >
-          --timeout 20 
+          --timeout 25
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
           --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
