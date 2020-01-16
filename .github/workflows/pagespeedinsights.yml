@@ -1,0 +1,20 @@
+name: Check Site Performance
+
+on: 
+  push:
+    branches:
+    - master
+  schedule:
+    - cron:  '0 13 * * 6'
+  repository_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights
+        uses: mattorb/psi-action@v1
+        id: psi
+        with:
+          url: "https://mattorb.com"
+          threshold: 70
+          strategy: mobile
