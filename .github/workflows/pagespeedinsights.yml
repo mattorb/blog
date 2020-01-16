@@ -16,5 +16,5 @@ jobs:
         id: psi
         with:
           url: "https://mattorb.com"
-          threshold: 70
+          threshold: 90
           strategy: mobile
