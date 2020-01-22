@@ -1,0 +1,17 @@
+name: Test site for publicly known js vulnerabilities
+
+on: 
+  push:
+    branches:
+    - master
+  schedule:
+    - cron:  '0 13 * * 6'
+  repository_dispatch:
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing for public javascript library vulnerabilities 
+        uses: mattorb/is-website-vulnerable@github-action_v1
+        with:
+          scan-url: "https://mattorb.com"
