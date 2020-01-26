@@ -11,17 +11,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Running Page Speed Insights (Mobile)
+      - name: Running Page Speed Insights, Mobile, Homepage
         uses: mattorb/psi-action@v1
-        id: psi_mobile
+        id: psi_mobile_homepage
         with:
           url: "https://mattorb.com"
           threshold: 90
           strategy: mobile
-      - name: Running Page Speed Insights (Desktop)
+      - name: Running Page Speed Insights, Desktop, Homepage
         uses: mattorb/psi-action@v1
-        id: psi_desktop
+        id: psi_desktop_homepage
         with:
           url: "https://mattorb.com"
+          threshold: 96
+          strategy: desktop
+      - name: Running Page Speed Insights, Mobile, a typical post page
+        uses: mattorb/psi-action@v1
+        id: psi_mobile_postpage
+        with:
+          url: "https://mattorb.com/level-up-shortcuts-and-the-hyper-key/"
+          threshold: 90
+          strategy: mobile
+      - name: Running Page Speed Insights, Desktop, a typical post page
+        uses: mattorb/psi-action@v1
+        id: psi_desktop_postpage
+        with:
+          url: "https://mattorb.com/level-up-shortcuts-and-the-hyper-key/"
           threshold: 96
           strategy: desktop
