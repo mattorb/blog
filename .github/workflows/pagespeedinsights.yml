@@ -23,5 +23,5 @@ jobs:
         id: psi_desktop
         with:
           url: "https://mattorb.com"
-          threshold: 90
+          threshold: 96
           strategy: desktop
