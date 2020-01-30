@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Give other site assessments time to finish.  need to find a better way.
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '120s'
       - name: Running Page Speed Insights, Mobile, Homepage
         uses: mattorb/psi-action@v1
         id: psi_mobile_homepage
