@@ -1,4 +1,4 @@
-name: Lighthoues audit live site
+name: Lighthouse
 on: 
   push:
     branches:

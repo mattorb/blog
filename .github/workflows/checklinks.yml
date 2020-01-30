@@ -1,4 +1,4 @@
-name: checklinks
+name: Broken links
 
 on: 
   push:

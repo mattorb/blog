@@ -1,4 +1,4 @@
-name: Check Site Performance
+name: PageSpeed
 
 on: 
   push:
