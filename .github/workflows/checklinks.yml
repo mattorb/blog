@@ -20,5 +20,5 @@ jobs:
           --exclude .*twitter.com/share.* 
           --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
           --exclude "https://github.com/mattorb/blog/actions\?workflow=checklinks"
-          --exclude "https://crontab.guru/#0_13_*_*_6"
+          --exclude .*crontab.guru/.*
           https://mattorb.com
