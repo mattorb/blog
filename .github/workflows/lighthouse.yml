@@ -10,6 +10,7 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Give other site assessments time to finish.  Need to find a better way.
         uses: jakejarvis/wait-action@master
         with:
