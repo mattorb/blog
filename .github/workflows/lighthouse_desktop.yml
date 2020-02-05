@@ -1,0 +1,29 @@
+name: Lighthouse-Desktop
+on: 
+  push:
+    branches:
+    - master
+  schedule:
+    - cron:  '0 13 * * 6'
+  repository_dispatch:
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Give other site assessments time to finish.  Need to find a better way.
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '300s'
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://mattorb.com/
+            https://mattorb.com/level-up-shortcuts-and-the-hyper-key/
+          configPath: '.github/lighthouse/lighthouserc_desktop.json'
+      - name: Save results
+        uses: actions/upload-artifact@v1
+        with:
+          name: lighthouse-results-desktop
+          path: '.lighthouseci'

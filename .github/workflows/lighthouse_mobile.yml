@@ -1,4 +1,4 @@
-name: Lighthouse
+name: Lighthouse-Mobile
 on: 
   push:
     branches:
@@ -14,16 +14,16 @@ jobs:
       - name: Give other site assessments time to finish.  Need to find a better way.
         uses: jakejarvis/wait-action@master
         with:
-          time: '180s'
+          time: '200s'
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
             https://mattorb.com/
             https://mattorb.com/level-up-shortcuts-and-the-hyper-key/
-          configPath: '.github/lighthouse/lighthouserc.json'
+          configPath: '.github/lighthouse/lighthouserc_mobile.json'
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
-          name: lighthouse-results
+          name: lighthouse-results-mobile
           path: '.lighthouseci'
