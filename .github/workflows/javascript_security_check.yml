@@ -23,6 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Testing for public javascript library vulnerabilities 
-        uses: mattorb/is-website-vulnerable@github-action_v1
+        uses: lirantal/is-website-vulnerable@master
         with:
           scan-url: "https://mattorb.com"
