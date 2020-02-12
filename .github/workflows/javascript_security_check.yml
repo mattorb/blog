@@ -14,11 +14,7 @@ jobs:
     - name: Give other site assessments time to finish.  need to find a better way.
       uses: jakejarvis/wait-action@master
       with:
-        time: '120s'
-    - name: Give other site assessments time to finish.  need to find a better way.
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '60s'
+        time: '400s'
   security:
     runs-on: ubuntu-latest
     steps:
