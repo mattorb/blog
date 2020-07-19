@@ -27,5 +27,6 @@ jobs:
           --exclude .*twitter.com/share.* 
           --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
           --exclude "https://github.com/mattorb/blog/actions\?workflow=checklinks"
+          --exclude "https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/configuration.md#assert"
           --exclude .*crontab.guru/.*
           https://mattorb.com
