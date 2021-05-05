@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check links on site
-      uses: mattorb/actions-muffet@v2.4.2
+      uses: mattorb/actions-muffet@v2.4.2-b
       with: 
         args: >
           --timeout 25
