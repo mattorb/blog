@@ -22,6 +22,8 @@ jobs:
       uses: mattorb/actions-muffet@v2.4.2
       with: 
         args: >
+          --concurrency 10
+          --buffer-size 8192
           --timeout 25
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
