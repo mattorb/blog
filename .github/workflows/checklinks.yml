@@ -23,6 +23,9 @@ jobs:
       with: 
         args: >
           --timeout 25
+          --buffer-size 8192
+          --concurrency 10
+          --ignore-fragments
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
           --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
