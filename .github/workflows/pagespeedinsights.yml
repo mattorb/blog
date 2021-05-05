@@ -20,7 +20,7 @@ jobs:
         id: psi_mobile_homepage
         with:
           url: "https://mattorb.com"
-          threshold: 78
+          threshold: 80
           strategy: mobile
       - name: Running Page Speed Insights, Desktop, Homepage
         uses: mattorb/psi-action@v1
