@@ -28,8 +28,7 @@ jobs:
           --ignore-fragments
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
-          --exclude "https://graphql.org/learn/pagination/#complete-connection-model"
+          --exclude "https://www.pmi.org/learning/library/characterizing-unknown-unknowns-6077"
           --exclude "https://github.com/mattorb/blog/actions\?workflow=checklinks"
-          --exclude "https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/configuration.md#assert"
           --exclude .*crontab.guru/.*
           https://mattorb.com
