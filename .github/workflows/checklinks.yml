@@ -25,7 +25,8 @@ jobs:
         args: >
           --timeout 25
           --buffer-size 8192
-          --concurrency 10
+          --max-connections 10
+          --max-connections-per-host 10
           --ignore-fragments
           --exclude .*linkedin.com/in/mattorb 
           --exclude .*twitter.com/share.* 
