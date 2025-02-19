@@ -24,7 +24,7 @@ jobs:
             https://mattorb.com/level-up-shortcuts-and-the-hyper-key/
           configPath: '.github/lighthouse/lighthouserc_mobile.json'
       - name: Save results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: lighthouse-results-mobile
           path: '.lighthouseci'
