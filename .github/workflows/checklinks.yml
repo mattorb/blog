@@ -35,6 +35,8 @@ jobs:
           --exclude "https://www.pmi.org/learning/library/characterizing-unknown-unknowns-6077"
           --exclude "https://github.com/mattorb/blog/actions\?workflow=checklinks"
           --exclude .*crontab.guru/.*
-          --exclude '.*twitter.com.*' 
-          --exclude 'https://mattorb.com/webmentions/receive/' 
+          --exclude .*twitter.com.*
+          --exclude .*reddit.com.*
+          --exclude .*x.com.*
+          --exclude "https://mattorb.com/webmentions/receive/"
           https://mattorb.com
