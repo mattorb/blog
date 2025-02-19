@@ -11,13 +11,13 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Give other site assessments time to finish.  Need to find a better way.
         uses: jakejarvis/wait-action@master
         with:
           time: '200s'
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v2
+        uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
             https://mattorb.com/
